@@ -757,21 +757,21 @@
 ?>
 </div>
 <script>
-    function kiemTraSDT(input) {
+   // function kiemTraSDT(input) {
         // Biểu thức chính quy kiểm tra SĐT Việt Nam (bắt đầu bằng 0, dài 10 số)
         // var vnf_regex = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
         
         // Hoặc dùng regex đơn giản hơn (chỉ cần là số và có 10 chữ số):
-        var vnf_regex = /^0[0-9]{8}$/;
+     //   var vnf_regex = /^0[0-9]{8}$/;
 
-        if(input.value !== ''){
+       // if(input.value !== ''){
             if (vnf_regex.test(input.value) == false) {
                 alert('Số điện thoại không hợp lệ! Vui lòng nhập đúng định dạng 10 số (VD: 0912345678).');
                 input.value = ''; // Xóa giá trị sai
                 input.focus();    // Đưa con trỏ chuột lại ô nhập
             }
         }
-    }
+   // }
 </script>
 </body>
 </body>
