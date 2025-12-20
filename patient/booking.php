@@ -277,9 +277,9 @@
                                                             Your Appointment Number
                                                         </div>
                                                         <center>
-                                                        <div class=" dashboard-icons" style="margin-left: 0px;width:90%;font-size:70px;font-weight:800;text-align:center;color:var(--btnnictext);background-color: var(--btnice)">
-                                                        1
-                                                        </div>
+                                                        <div class=" dashboard-icons" style="margin-left: 0px;width:90%;font-size:70px;font-weight:800;text-align:center;color:var(--btnnictext);background-color: var(--btnice)">'
+                                                        .$apponum.
+                                                        '</div>
                                                     </center>
                                                        
                                                         </div><br>
