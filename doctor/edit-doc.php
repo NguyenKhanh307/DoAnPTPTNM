@@ -5,9 +5,6 @@
 
     //import database
     include("../connection.php");
-
-
-
     if($_POST){
         //print_r($_POST);
         $result= $database->query("select * from webuser");
@@ -64,8 +61,6 @@
         //header('location: signup.php');
         $error='3';
     }
-    
-
     header("location: settings.php?action=edit&error=".$error."&id=".$id);
     ?>
     
