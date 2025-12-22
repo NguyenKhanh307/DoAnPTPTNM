@@ -410,7 +410,6 @@
                     '2'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Password Conformation Error! Reconform Password</label>',
                     '3'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;"></label>',
                     '4'=>"",
-                    '5'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Số điện thoại này đã được sử dụng.</label>',
                     '0'=>'',
 
                 );
@@ -474,8 +473,7 @@
                             </tr>
                             <tr>
                                 <td class="label-td" colspan="2">
-                                    <input type="tel" name="Tele" class="input-text" placeholder="Telephone Number" onchange="kiemTraSDT(this)" value="'.$tele.'" required><br>
-
+                                    <input type="tel" name="Tele" class="input-text" placeholder="Telephone Number" required><br>
                                 </td>
                             </tr>
                             <tr>
@@ -588,7 +586,6 @@
                     '2'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Password Conformation Error! Reconform Password</label>',
                     '3'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;"></label>',
                     '4'=>"",
-                    '5'=>'<label for="promter" class="form-label" style="color:rgb(255, 62, 62);text-align:center;">Số điện thoại này đã được sử dụng.</label>',
                     '0'=>'',
 
                 );
@@ -657,7 +654,7 @@
                                     </tr>
                                     <tr>
                                         <td class="label-td" colspan="2">
-                                            <input type="tel" name="Tele" class="input-text" placeholder="Telephone Number" onchange="kiemTraSDT(this)" value="'.$tele.'" required><br>
+                                            <input type="tel" name="Tele" class="input-text" placeholder="Telephone Number" value="'.$tele.'" required><br>
                                         </td>
                                     </tr>
                                     <tr>
@@ -756,23 +753,6 @@
 
 ?>
 </div>
-<script>
-    function kiemTraSDT(input) {
-        // Biểu thức chính quy kiểm tra SĐT Việt Nam (bắt đầu bằng 0, dài 10 số)
-        // var vnf_regex = /^(0?)(3[2-9]|5[6|8|9]|7[0|6-9]|8[0-6|8|9]|9[0-4|6-9])[0-9]{7}$/;
-        
-        // Hoặc dùng regex đơn giản hơn (chỉ cần là số và có 10 chữ số):
-        var vnf_regex = /^0[0-9]{8}$/;
 
-        if(input.value !== ''){
-            if (vnf_regex.test(input.value) == false) {
-                alert('Số điện thoại không hợp lệ! Vui lòng nhập đúng định dạng 10 số (VD: 0912345678).');
-                input.value = ''; // Xóa giá trị sai
-                input.focus();    // Đưa con trỏ chuột lại ô nhập
-            }
-        }
-    }
-</script>
-</body>
 </body>
 </html>
